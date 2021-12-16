@@ -69,7 +69,7 @@ WWWWMMWWWWWMMWWWWWMMWWWWWMMWWWWWWMWWWWWWMWWWWWWMMWWWWWMMWWWWWMMWWWWWMMWWWWWMMMWW
 */
 
 /*
- * Stanford CS 251 NFT | Fall 2021 Collection
+ * Stanford CS 251 NFT | Autumn 2021 Collection
  *
  * Features: Enumerable, Ownable, Non-Transferable, Mintable
  *
@@ -83,10 +83,10 @@ WWWWMMWWWWWMMWWWWWMMWWWWWMMWWWWWWMWWWWWWMWWWWWWMMWWWWWMMWWWWWMMWWWWWMMWWWWWMMMWW
 
 /// @custom:security-contact cs251ta@cs.stanford.edu
 contract StanfordCS251NFT is ERC721, ERC721Enumerable, Ownable {
-  constructor() ERC721("Stanford CS 251 NFT | Fall 2021", "CS 251") {}
+  constructor() ERC721("Stanford CS 251 NFT Autumn 2021", "CS 251") {}
 
   function _baseURI() internal pure override returns (string memory) {
-    return "ipfs://QmNb6biebpmibhMb9LpkDxvS7HyGgoqeFYwpjJbEAAdJbA";
+    return "ipfs://QmUW2246fZRGMv3An4EZhN78xVANQSw3ZKLXsAVa3DsAu9";
   }
 
   // Override required by Solidity.

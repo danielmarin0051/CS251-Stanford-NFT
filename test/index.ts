@@ -4,7 +4,7 @@ import { ethers } from "hardhat";
 import { signNonce } from "../scripts/lib/signNonce";
 import { StanfordCS251NFT } from "../typechain";
 
-const EXPECTED_TOKEN_URI = "ipfs://QmNb6biebpmibhMb9LpkDxvS7HyGgoqeFYwpjJbEAAdJbA";
+const EXPECTED_TOKEN_URI = "ipfs://QmUW2246fZRGMv3An4EZhN78xVANQSw3ZKLXsAVa3DsAu9";
 
 describe("CS251 Stanford NFT", function () {
   let StanfordCS251NFT: StanfordCS251NFT;
@@ -20,7 +20,7 @@ describe("CS251 Stanford NFT", function () {
     await StanfordCS251NFT.deployed();
   });
   it("Should return the correct name", async function () {
-    expect(await StanfordCS251NFT.name()).to.equal("Stanford CS 251 NFT | Fall 2021");
+    expect(await StanfordCS251NFT.name()).to.equal("Stanford CS 251 NFT Autumn 2021");
   });
   it("Should allow mint with valid signature", async function () {
     const nonce = 42;
